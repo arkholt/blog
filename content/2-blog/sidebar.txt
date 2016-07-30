@@ -7,10 +7,6 @@ Follow Me
 * [Twitter](http://twitter.com/arkholt)
 * [The Bird Feeder](http://thebirdfeeder.com)
 
-Recent
-
-[blogrecent /blog/]
-
 Archive
 
-[blogarchive /blog/]
+[blogarchive]
