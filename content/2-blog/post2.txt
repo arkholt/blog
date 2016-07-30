@@ -1,0 +1,8 @@
+---
+Title: Post 2
+Author: arkholt
+Published: 2016-7-30
+Tag: test
+---
+
+New post testing Git2Go.
