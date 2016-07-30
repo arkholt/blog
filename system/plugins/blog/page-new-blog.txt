@@ -1,7 +1,0 @@
----
-Title: Blog page
-Published: @datetime
-Author: @username
-Tag: Example
----
-This is a new blog page.
