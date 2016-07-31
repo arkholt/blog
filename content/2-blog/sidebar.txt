@@ -2,11 +2,11 @@
 Title: Sidebar
 Status: hidden
 ---
-Follow Me
+###Follow Me
 
 * [Twitter](http://twitter.com/arkholt)
 * [The Bird Feeder](http://thebirdfeeder.com)
 
-Archive
+###Archive
 
 [blogarchive]
