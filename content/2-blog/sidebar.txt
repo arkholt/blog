@@ -7,12 +7,12 @@ Status: hidden
 
 [search]
 
-[fa fa-rss] Subscribe via RSS
-[fa fa-envelope] Subscribe via Email
+[fa fa-rss] Subscribe via RSS  
+[fa fa-envelope] Subscribe via Email  
 
 Tags
 
-[fa fa-twitter] [Twitter](http://twitter.com/arkholt)
-[fa fa-envelope] [Contact](http://arkholt.com/contact)
-[Arkholt.com](http://arkholt.com)
-[The Bird Feeder](http://thebirdfeeder.com)
+[fa fa-twitter] [Twitter](http://twitter.com/arkholt)  
+[fa fa-envelope] [Contact](http://arkholt.com/contact.html)  
+[Arkholt.com](http://arkholt.com)  
+[The Bird Feeder](http://thebirdfeeder.com)  
