@@ -2,11 +2,17 @@
 Title: Sidebar
 Status: hidden
 ---
-###Follow Me
+#Blog.Arkholt
+##Read my thoughts.
 
-* [Twitter](http://twitter.com/arkholt)
-* [The Bird Feeder](http://thebirdfeeder.com)
+[search]
 
-###Archive
+[fa fa-rss] Subscribe via RSS
+[fa fa-envelope] Subscribe via Email
 
-[blogarchive]
+Tags
+
+[fa fa-twitter] [Twitter](http://twitter.com/arkholt)
+[fa fa-envelope] [Contact](http://arkholt.com/contact)
+[Arkholt.com](http://arkholt.com)
+[The Bird Feeder](http://thebirdfeeder.com)
