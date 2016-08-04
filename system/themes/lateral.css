@@ -41,7 +41,7 @@ a, img { border:none; text-decoration:none; }
 	overflow: auto;
 	z-index: 1;
 	/*border-right: 1px solid #eee;*/
-	line-height: 1.6em;
+	line-height: 2.2em;
 	top:0;
 	bottom:0;
 	left:0;
@@ -135,13 +135,14 @@ a, img { border:none; text-decoration:none; }
 /* Forms and buttons */
 
 .form-control {
-	margin:0; padding:2px 4px;
+	margin:0; padding:2px 15px;
 	display:inline-block;
 	background-color:#fff; color:#555;
 	background-image:linear-gradient(to bottom, #fff, #fff);
 	border:1px solid #bbb;
-	border-radius:4px;
+	border-radius:12px;
 	font-size:0.9em; font-family:inherit; font-weight:normal; line-height:normal;
+	width:80%;
 }
 .btn {
 	margin:0; padding:4px 22px;
