@@ -125,7 +125,7 @@ a, img { border:none; text-decoration:none; }
 }
 .btn:hover, .btn:focus, .btn:active {
 	color:#333333;
-	background-image:none; 
+	background-image:none;
 	text-decoration:none;
 }
 .btn:active { box-shadow:inset 0 2px 4px rgba(0, 0, 0, 0.1); }
@@ -134,11 +134,11 @@ a, img { border:none; text-decoration:none; }
 
 .page { margin:0 auto; max-width:1000px; }
 
-@media screen and (min-width:62em) { 
+@media screen and (min-width:62em) {
 	body { width:60em; margin:1em auto; }
 	.page{ margin:0; max-width:none; }
 }
-@media screen and (max-width:30em) { 
+@media screen and (max-width:30em) {
 	body { margin:0.5em; font-size:0.9em; }
 	.sitename h1, h1, h2 { font-size:1.2em; }
 	.sitename h1, .header, .navigation, .footer, .page { margin:0; padding:0; }
