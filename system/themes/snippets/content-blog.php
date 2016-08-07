@@ -9,7 +9,7 @@
 <div class="entry-content"><?php echo $yellow->page->getContent() ?></div>
 <div class="entry-footer">
 <?php if($yellow->page->isExisting("tag")): ?>
-<p><?php echo $yellow->text->getHtml("blogTag") ?> <?php $tagCounter = 0; foreach(preg_split("/,\s*/", $yellow->page->get("tag")) as $tag) { if(++$tagCounter>1) echo ", "; echo "<a href=\"".$yellow->page->getPage("blog")->getLocation(true).$yellow->toolbox->normaliseArgs("tag:$tag")."\">".htmlspecialchars($tag)."</a>"; } ?></p>
+<p><!--<?php echo $yellow->text->getHtml("blogTag") ?> --> <i class='fa fa-tag'></i> <?php $tagCounter = 0; foreach(preg_split("/,\s*/", $yellow->page->get("tag")) as $tag) { if(++$tagCounter>1) echo ", "; echo "<a href=\"".$yellow->page->getPage("blog")->getLocation(true).$yellow->toolbox->normaliseArgs("tag:$tag")."\">".htmlspecialchars($tag)."</a>"; } ?></p>
 <?php endif ?>
 </div>
 </div>
