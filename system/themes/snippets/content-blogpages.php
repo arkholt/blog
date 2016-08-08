@@ -9,7 +9,7 @@
 <?php endif ?>
 <div class="<?php echo $page->getHtml("entryClass") ?>">
 <div class="entry-header"><h1><a href="<?php echo $page->getLocation(true) ?>"><?php echo $page->getHtml("title") ?></a></h1></div>
-<div class="entry-meta"><?php echo htmlspecialchars($page->getDate("published")) ?> <?php echo $yellow->text->getHtml("blogBy") ?> <?php $authorCounter = 0; foreach(preg_split("/,\s*/", $page->get("author")) as $author) { if(++$authorCounter>1) echo ", "; echo "<a href=\"".$yellow->page->getLocation(true).$yellow->toolbox->normaliseArgs("author:$author")."\">".htmlspecialchars($author)."</a>"; } ?></div>
+<div class="entry-meta"><p><i class='fa fa-calendar'></i> <?php echo htmlspecialchars($page->getDate("published")) ?></p> <!--<?php echo $yellow->text->getHtml("blogBy") ?>--> <p><?php $authorCounter = 0; foreach(preg_split("/,\s*/", $page->get("author")) as $author) { if(++$authorCounter>1) echo ", "; echo "<a href=\"".$yellow->page->getLocation(true).$yellow->toolbox->normaliseArgs("author:$author")."\">".htmlspecialchars($author)."</a>"; } ?></p></div>
 <div class="entry-content"><?php echo $yellow->toolbox->createTextDescription($page->getContent(), $yellow->config->get("blogPageLength"), false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$yellow->text->getHtml("blogMore")."</a>") ?></div>
 </div>
 <?php endforeach ?>
