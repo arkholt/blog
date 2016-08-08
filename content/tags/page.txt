@@ -1,0 +1,5 @@
+---
+Title: Tags
+---
+
+[blogtags /blog/]
