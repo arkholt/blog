@@ -10,7 +10,7 @@ Status: hidden
 [fa fa-rss] Subscribe via RSS  
 [fa fa-envelope] Subscribe via Email  
 
-Tags
+[Tags](http://test.arkholt.com/tags/)  
 
 [fa fa-twitter] [Twitter](http://twitter.com/arkholt)  
 [fa fa-envelope] [Contact](http://arkholt.com/contact.html)  
