@@ -8,13 +8,13 @@ html, body, div, form, pre, span, tr, th, td { margin:0; padding:0; border:0; ve
 body {
 	margin:0;
 	background-color:#fff; color:#3A4145;
-	font-family:"Open Sans","HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-family:"Open Sans", /*"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",*/ sans-serif;
 	font-size:1.0em;
 	font-weight:300;
 	line-height:1.5;
 }
 h1, h2, h3, h4, h5, h6 { color:#3A4145; font-weight:bold; }
-h1 { font-size:2.0em; }
+h1 { font-size:2.6em; }
 hr { height:1px; background:#ddd; border:0; }
 strong { font-weight:bold; }
 code { font-size:1.1em; }
@@ -34,7 +34,7 @@ a, img { border:none; text-decoration:none; }
 .with-sidebar .sidebar {
 	position: fixed;
 	width:140px;
-	font-size:0.9em;
+	font-size:0.8em;
 	text-align:left;
 	height: 100%;
 	width: 285px;
@@ -47,6 +47,7 @@ a, img { border:none; text-decoration:none; }
 	left:0;
 	background-color: #45bf55;
 	padding-left: 2.5em;
+	padding-top: 1em;
  }
 
 .with-sidebar .main { margin-left:270px;}
@@ -54,6 +55,13 @@ a, img { border:none; text-decoration:none; }
 .with-sidebar .sidebar ul { margin:1em 0; list-style:none; padding:0;}
 .navigation-sidebar { padding:1em 0;}
 .navigation-sidebar ul { margin:0; }
+
+.entry-meta {
+	color: #9EABB3;
+	font-size: 14px;
+	line-height: 1.4em;
+	margin: 8px 0;
+}
 
 /*This is useful with standard navigation, because of body margin=0*/
 .header,.main,.footer, .sidebar {padding:0 1em;}
@@ -189,21 +197,22 @@ a, img { border:none; text-decoration:none; }
 @media screen and (max-width:40em) {
 	body { margin:0.5em; font-size:0.9em; background-color:#fff;}
 	.sitename h1, h1, h2, h3, h4 { font-size:1.2em; }
-	.sitename h1, .header, .navigation, .footer, .page, .main, .sidebar { margin:0; padding:0; }
+	.sitename h1, .header, .navigation, .footer, .main, { margin:0; padding:1em; }
+	.page, .sidebar { margin:0; padding:0; }
 	.sitename, .navigation, .navigation-tree { float:none; }
 	.navigation-search { padding-top:0.5em; }
 	.footer-right { display:none; }
 	.with-sidebar .main { margin-left:0; }
 	.with-sidebar .header { margin-left:0; }
 	.with-sidebar .footer { margin-left:0; }
-	.page.with-sidebar {padding:0.5em;}
+	/*.page.with-sidebar {padding:0.5em;}*/
 	.with-sidebar .sidebar {
 		position: relative;
 		width:auto;
 		text-align:left;
 		line-height: 1.3;
 		border-right: 0px;
-		border-bottom:1px solid #ddd;
+		/*border-bottom:1px solid #ddd;*/
 	}
 	.page:before {display:none;}
 
