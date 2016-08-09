@@ -197,9 +197,10 @@ a, img { border:none; text-decoration:none; }
 @media screen and (max-width:40em) {
 	body {
 		/*margin:0.5em; */
-		font-size:0.9em; 
+		font-size:0.9em;
 		background-color:#fff;}
-	.sitename h1, h1, h2, h3, h4 { font-size:1.2em; }
+	.sitename h1, h1, { font-size:2.4em; }
+	.sitename h2, h3, h4 { font-size:1.2em; }
 	.sitename h1, .header, .navigation, .footer, .main, { margin:0; padding:1em; }
 	.page, .sidebar { margin:0; padding:0; }
 	.sitename, .navigation, .navigation-tree { float:none; }
