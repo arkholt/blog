@@ -19,5 +19,5 @@ Status: hidden
 
 © 2016 Ben Carlsen • All rights reserved.  
 Made with [Yellow](https://datenstrom.se/yellow/).  
-[Lateral](https://github.com/nibreh/yellow-theme-lateral) theme by nibreh.  
+[Lateral](https://github.com/nibreh/yellow-theme-lateral) theme by Juh Nibreh.  
 Style based on [StayPuft](https://github.com/dlecina/StayPuft) by David Lecina.

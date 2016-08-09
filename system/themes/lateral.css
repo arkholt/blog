@@ -10,7 +10,7 @@ body {
 	background-color:#fff; color:#3A4145;
 	font-family:"Open Sans", sans-serif;
 	font-size:1.0em;
-	font-weight:300;
+	font-weight:400;
 	line-height:1.5;
 }
 h1, h2, h3, h4, h5, h6 { color:#3A4145; font-weight:bold; }
@@ -26,8 +26,8 @@ a, img { border:none; text-decoration:none; }
 .sitename h1 a { color:#111; text-decoration:none; }
 
 /*Lateral*/
-.with-sidebar .sidebar h1,h3 { margin-top:1em; font-weight: bold; color: #fff;}
-.with-sidebar .sidebar h2 {font-weight: normal; color: #eee;}
+.with-sidebar .sidebar h1,h3 { margin-top:1em; margin-bottom: .4em; font-weight: bold; color: #fff;}
+.with-sidebar .sidebar h2 {font-weight: normal; color: #eee; font-size: 1.4em;}
 .with-sidebar .sidebar p { margin:1em 0; color: #eee;}
 .with-sidebar .sidebar a { color: #eee;}
 .with-sidebar .header { margin-left: 170px; margin-top: 1em; /*border-bottom: 1px solid #eee;*/}
