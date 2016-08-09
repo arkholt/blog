@@ -8,7 +8,7 @@ html, body, div, form, pre, span, tr, th, td { margin:0; padding:0; border:0; ve
 body {
 	margin:0;
 	background-color:#fff; color:#3A4145;
-	font-family:"Open Sans", /*"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande",*/ sans-serif;
+	font-family:"Open Sans", sans-serif;
 	font-size:1.0em;
 	font-weight:300;
 	line-height:1.5;
@@ -195,7 +195,10 @@ a, img { border:none; text-decoration:none; }
 	.page{ margin:0; max-width:none; }
 }
 @media screen and (max-width:40em) {
-	body { margin:0.5em; font-size:0.9em; background-color:#fff;}
+	body {
+		/*margin:0.5em; */
+		font-size:0.9em; 
+		background-color:#fff;}
 	.sitename h1, h1, h2, h3, h4 { font-size:1.2em; }
 	.sitename h1, .header, .navigation, .footer, .main, { margin:0; padding:1em; }
 	.page, .sidebar { margin:0; padding:0; }
