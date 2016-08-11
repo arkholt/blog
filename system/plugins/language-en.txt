@@ -21,8 +21,8 @@ ContactStatusError: Email could not be sent, please try again later!
 DateMonths: January, February, March, April, May, June, July, August, September, October, November, December
 DateWeekdays: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 DateFormatShort: F Y
-DateFormatMedium: Y-m-d
-DateFormatLong: Y-m-d H:i
+DateFormatMedium: F d, Y
+DateFormatLong: F d, Y H:i
 PaginationPrevious: ← Previous
 PaginationNext: Next →
 SearchQuery: Search:

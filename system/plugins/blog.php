@@ -7,16 +7,16 @@ class YellowBlog
 {
 	const VERSION = "0.6.6";
 	var $yellow;			//access to API
-	
+
 	// Handle initialisation
 	function onLoad($yellow)
 	{
 		$this->yellow = $yellow;
 		$this->yellow->config->setDefault("blogLocation", "");
-		$this->yellow->config->setDefault("blogPaginationLimit", "5");
+		$this->yellow->config->setDefault("blogPaginationLimit", "10");
 		$this->yellow->config->setDefault("blogPageLength", "1024");
 	}
-	
+
 	// Handle page meta data parsing
 	function onParseMeta($page)
 	{
@@ -29,7 +29,7 @@ class YellowBlog
 			}
 		}
 	}
-	
+
 	// Handle page content parsing of custom block
 	function onParseContentBlock($page, $name, $text, $shortcut)
 	{
@@ -135,7 +135,7 @@ class YellowBlog
 		}
 		return $output;
 	}
-	
+
 	// Handle page parsing
 	function onParsePage()
 	{
