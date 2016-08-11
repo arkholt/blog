@@ -13,8 +13,8 @@ class YellowBlog
 	{
 		$this->yellow = $yellow;
 		$this->yellow->config->setDefault("blogLocation", "");
-		$this->yellow->config->setDefault("blogPaginationLimit", "10");
-		$this->yellow->config->setDefault("blogPageLength", "1024");
+		$this->yellow->config->setDefault("blogPaginationLimit", "25");
+		$this->yellow->config->setDefault("blogPageLength", "10240");
 	}
 
 	// Handle page meta data parsing

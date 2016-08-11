@@ -23,8 +23,8 @@ DateWeekdays: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
 DateFormatShort: F Y
 DateFormatMedium: F d, Y
 DateFormatLong: F d, Y H:i
-PaginationPrevious: ← Previous
-PaginationNext: Next →
+PaginationPrevious: ← Newer Posts
+PaginationNext: Older Posts →
 SearchQuery: Search:
 SearchResultsNone: Enter a search term.
 SearchResultsEmpty: No results found.

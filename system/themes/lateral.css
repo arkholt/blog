@@ -78,7 +78,7 @@ a, img { border:none; text-decoration:none; }
 .content .flexible { position:relative; padding-top:0; padding-bottom:56.25%; }
 .content .flexible iframe { position:absolute; top:0; left:0; width:100%; height:100%; }
 .content .toc { margin:0; padding:0; list-style:none; }
-.content .pagination { margin:1em 0; }
+.content .pagination { margin:1em 0; position: relative;}
 .content blockquote { margin-left:0; padding-left:1em; border-left:.5em solid #0a0; }
 .content blockquote blockquote { margin-left:-1.5em; border-left:.5em solid #fb0; }
 .content blockquote blockquote blockquote { border-color:#d00; }
@@ -109,6 +109,30 @@ a, img { border:none; text-decoration:none; }
 .left { float:left; margin:0 1em 0 0; }
 .center { display:block; margin:0 auto; }
 .right { float:right; margin:0 0 0 1em; }
+
+/* Pagination */
+
+a.previous {
+	position: absolute;
+	left: 0;
+	display: inline-block;
+	padding: 0 15px;
+	border: #EBF2F6 2px solid;
+	text-decoration: none;
+	border-radius: 30px;
+	font-size: 0.9em;
+}
+a.next {
+	position: absolute;
+	right: 0;
+	display: inline-block;
+	padding: 0 15px;
+	border: #EBF2F6 2px solid;
+	text-decoration: none;
+	border-radius: 30px;
+	font-size: 0.9em;
+
+}
 
 /* Navigation */
 
