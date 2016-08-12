@@ -7,8 +7,8 @@ Status: hidden
 
 [search]
 
-[fa fa-rss] [Subscribe via RSS](blog.arkholt.com/feed/page:feed.xml)  
-[fa fa-envelope] [Subscribe via Email](blog.arkholt.com/subscribe-via-email)  
+[fa fa-rss] [Subscribe via RSS](http://blog.arkholt.com/feed/page:feed.xml)  
+[fa fa-envelope] [Subscribe via Email](http://blog.arkholt.com/subscribe-via-email)  
 
 [Tags](http://blog.arkholt.com/tags/)  
 
