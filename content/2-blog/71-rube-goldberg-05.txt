@@ -4,7 +4,7 @@ Published: 2015-12-31
 Tag: christmas 2015
 Author: Ben Carlsen
 ---
-[![Rube Goldberg New Year's Greeting](http://blog.arkholt.com/content/media/decstrips2015/31-New-Years-Greeting.jpg)](http://blog.arkholt.com/content/media/decstrips2015/31-New-Years-Greeting.jpg)
+[![Rube Goldberg New Year's Greeting](http://blog.arkholt.com/media/decstrips2015/31-New-Years-Greeting.jpg)](http://blog.arkholt.com/media/decstrips2015/31-New-Years-Greeting.jpg)
 
 Click the image for a larger version.
 
