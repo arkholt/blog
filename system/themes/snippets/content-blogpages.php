@@ -15,7 +15,7 @@
   <p><i class='fa fa-tag'></i> <?php $tagCounter = 0; foreach(preg_split("/,\s*/", $yellow->page->get("tag")) as $tag) { if(++$tagCounter>1) echo ", "; echo "<a href=\"".$yellow->page->getPage("blog")->getLocation(true).$yellow->toolbox->normaliseArgs("tag:$tag")."\">".htmlspecialchars($tag)."</a>"; } ?></p>
   <?php endif ?></p></div>
 <div class="entry-content"><?php echo $yellow->toolbox->createTextDescription($page->getContent(), $yellow->config->get("blogPageLength"), false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$yellow->text->getHtml("blogMore")."</a>") ?></div>
-<div id="entry-footer"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comments</a></div>
+<div id="entry-footer"><i class="fa fa-comment-o"></i> <?php <a href=\"".$page->getLocation(true)."\"#disqus_thread">Comments</a>?></div>
 </div>
 <?php endforeach ?>
 <?php $yellow->snippet("pagination", $yellow->page->getPages()) ?>
