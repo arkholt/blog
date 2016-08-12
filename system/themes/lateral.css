@@ -63,6 +63,14 @@ a, img { border:none; text-decoration:none; }
 	margin: 8px 0;
 }
 
+.entry-meta a {
+	color: #9EABB3;
+}
+
+.entry-meta a:hover {
+	color: #3A4145;
+}
+
 /*This is useful with standard navigation, because of body margin=0*/
 .header,.main,.footer, .sidebar {padding:0 1em;}
 
@@ -113,6 +121,7 @@ a, img { border:none; text-decoration:none; }
 /* Pagination */
 
 a.previous {
+	color: #9EABB3;
 	position: absolute;
 	left: 0;
 	display: inline-block;
@@ -123,6 +132,7 @@ a.previous {
 	font-size: 0.9em;
 }
 a.next {
+	color: #9EABB3;
 	position: absolute;
 	right: 0;
 	display: inline-block;
@@ -132,6 +142,14 @@ a.next {
 	border-radius: 30px;
 	font-size: 0.9em;
 
+}
+
+a.next:hover {
+	border: #9EABB3 2px solid;
+}
+
+a.previous:hover {
+	border: #9EABB3 2px solid;
 }
 
 /* Navigation */
