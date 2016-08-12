@@ -4,7 +4,7 @@ Published: 2015-12-03
 Tag: christmas 2015
 Author: Ben Carlsen
 ---
-[![Rube Goldberg Christmas Gift Decider](http://blog.arkholt.com/content/images/decstrips2015/03-ChristmasGiftforGirl.jpg)](http://blog.arkholt.com/content/images/decstrips2015/03-ChristmasGiftforGirl.jpg)
+[![Rube Goldberg Christmas Gift Decider](http://blog.arkholt.com/content/media/decstrips2015/03-ChristmasGiftforGirl.jpg)](http://blog.arkholt.com/content/media/decstrips2015/03-ChristmasGiftforGirl.jpg)
 
 Click the image for a larger version.
 
