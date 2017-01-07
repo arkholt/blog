@@ -1,11 +1,11 @@
 <?php
-// Copyright (c) 2013-2017 Datenstrom, http://datenstrom.se
+// Copyright (c) 2013-2016 Datenstrom, http://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
 // Command line plugin
 class YellowCommandline
 {
-	const VERSION = "0.6.17";
+	const VERSION = "0.6.14";
 	var $yellow;					//access to API
 	var $files;						//number of files
 	var $errors;					//number of errors
@@ -66,7 +66,7 @@ class YellowCommandline
 				$this->files = 0; $this->errors = 1;
 				$fileName = $this->yellow->config->get("configDir").$this->yellow->config->get("configFile");
 				echo "ERROR building files: Please configure ServerScheme, ServerName, ServerBase, ServerTime in file '$fileName'!\n";
-				echo "ERROR building files: Open your website in a web browser, if you want to see your server settings!\n";
+				echo "ERROR building files: To see your web server configuration, open your website in a web browser!\n";
 			}
 			echo "Yellow $command: $this->files file".($this->files!=1 ? 's' : '');
 			echo ", $this->errors error".($this->errors!=1 ? 's' : '');
@@ -137,7 +137,7 @@ class YellowCommandline
 			{
 				$fileData = ob_get_contents();
 				$modified = strtotime($this->yellow->page->getHeader("Last-Modified"));
-				if($modified==0) $modified = $this->yellow->toolbox->getFileModified($this->yellow->page->fileName);
+				if($modified==0) $modified = filemtime($this->yellow->page->fileName);
 				if($statusCode>=301 && $statusCode<=303)
 				{
 					$fileData = $this->getStaticRedirect($this->yellow->page->getHeader("Location"));
@@ -155,10 +155,9 @@ class YellowCommandline
 			ob_end_clean();
 		} else {
 			$statusCode = 200;
-			$modified = $this->yellow->toolbox->getFileModified($this->yellow->page->fileName);
 			$fileName = $this->getStaticFile($path, $location, $statusCode);
 			if(!$this->yellow->toolbox->copyFile($this->yellow->page->fileName, $fileName, true) ||
-			   !$this->yellow->toolbox->modifyFile($fileName, $modified))
+			   !$this->yellow->toolbox->modifyFile($fileName, filemtime($this->yellow->page->fileName)))
 			{
 				$statusCode = 500;
 				$this->yellow->page->statusCode = $statusCode;
@@ -264,7 +263,7 @@ class YellowCommandline
 		$statusCode = 200;
 		if(is_dir($path) && $this->checkStaticDirectory($path))
 		{
-			if(!$this->yellow->toolbox->deleteDirectory($path))
+			if(!$this->yellow->toolbox->deleteDirectory($path, true))
 			{
 				$statusCode = 500;
 				echo "ERROR cleaning files: Can't delete directory '$path'!\n";
@@ -320,7 +319,7 @@ class YellowCommandline
 			{
 				echo "$key $value\n";
 			} else {
-				echo "$key $dataLatest[$key] - Update available\n";
+				echo "$key $value - Update available\n";
 				++$updates;
 			}
 		}
@@ -399,7 +398,8 @@ class YellowCommandline
 	function getMediaLocations()
 	{
 		$locations = array();
-		$fileNames = $this->yellow->toolbox->getDirectoryEntriesRecursive($this->yellow->config->get("mediaDir"), "/.*/", false, false);
+		$fileNames = $this->yellow->toolbox->getDirectoryEntriesRecursive(
+			$this->yellow->config->get("mediaDir"), "/.*/", false, false);
 		foreach($fileNames as $fileName)
 		{
 			array_push($locations, "/".$fileName);
@@ -411,18 +411,17 @@ class YellowCommandline
 	function getSystemLocations()
 	{
 		$locations = array();
-		$regex = "/\.(css|ico|js|jpg|png|svg|txt|woff)/";
-		$pluginDirLength = strlenu($this->yellow->config->get("pluginDir"));
-		$fileNames = $this->yellow->toolbox->getDirectoryEntriesRecursive($this->yellow->config->get("pluginDir"), $regex, false, false);
+		$fileNames = $this->yellow->toolbox->getDirectoryEntries(
+			$this->yellow->config->get("pluginDir"), "/\.(css|ico|js|jpg|png|txt|woff)/", false, false);
 		foreach($fileNames as $fileName)
 		{
-			array_push($locations, $this->yellow->config->get("pluginLocation").substru($fileName, $pluginDirLength));
+			array_push($locations, $this->yellow->config->get("pluginLocation").basename($fileName));
 		}
-		$themeDirLength = strlenu($this->yellow->config->get("themeDir"));
-		$fileNames = $this->yellow->toolbox->getDirectoryEntriesRecursive($this->yellow->config->get("themeDir"), $regex, false, false);
+		$fileNames = $this->yellow->toolbox->getDirectoryEntries(
+			$this->yellow->config->get("themeDir"), "/\.(css|ico|js|jpg|png|txt|woff)/", false, false);
 		foreach($fileNames as $fileName)
 		{
-			array_push($locations, $this->yellow->config->get("themeLocation").substru($fileName, $themeDirLength));
+			array_push($locations, $this->yellow->config->get("themeLocation").basename($fileName));
 		}
 		array_push($locations, "/".$this->yellow->config->get("robotsFile"));
 		return $locations;
@@ -456,7 +455,8 @@ class YellowCommandline
 			list($statusCode, $data) = $this->yellow->plugins->get("update")->getSoftwareVersion($latest);
 		} else {
 			$statusCode = 200;
-			$data = array_merge($this->yellow->plugins->getData(), $this->yellow->themes->getData());
+			foreach($this->yellow->plugins->getData() as $key=>$value) $data[$key] = $value;
+			foreach($this->yellow->themes->getData() as $key=>$value) $data[$key] = $value;
 		}
 		return array($statusCode, $data);
 	}

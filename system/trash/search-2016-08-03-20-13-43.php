@@ -5,7 +5,7 @@
 // Search plugin
 class YellowSearch
 {
-	const VERSION = "0.6.7";
+	const VERSION = "0.6.5";
 	var $yellow;			//access to API
 	
 	// Handle initialisation
@@ -26,7 +26,7 @@ class YellowSearch
 			list($location) = $this->yellow->toolbox->getTextArgs($text);
 			if(empty($location)) $location = $this->yellow->config->get("searchLocation");
 			$output = "<div class=\"".htmlspecialchars($name)."\">\n";
-			$output .= "<form class=\"search-form\" action=\"".$this->yellow->page->base.$location."\" method=\"post\">\n";
+			$output .= "<form class=\"search-form\" action=\"".$this->yellow->page->base.$this->yellow->config->get("searchLocation")."\" method=\"post\">\n";
 			$output .= "<input class=\"form-control\" type=\"text\" name=\"query\" placeholder=\"".$this->yellow->text->getHtml("searchButton")."\" />\n";
 			$output .= "<input type=\"hidden\" name=\"clean-url\" />\n";
 			$output .= "</form>\n";

@@ -5,7 +5,7 @@
 // Disqus plugin
 class YellowDisqus
 {
-	const VERSION = "0.6.3";
+	const VERSION = "0.6.2";
 	var $yellow;			//access to API
 	
 	// Handle initialisation
@@ -15,11 +15,11 @@ class YellowDisqus
 		$this->yellow->config->setDefault("disqusShortname", "Yellow");
 	}
 	
-	// Handle page content parsing of custom block
-	function onParseContentBlock($page, $name, $text, $shortcut)
+	// Handle page extra HTML data
+	function onExtra($name)
 	{
 		$output = null;
-		if($name=="disqus" && $shortcut)
+		if($name=="disqus" || $name=="comments")
 		{
 			$shortname = $this->yellow->config->get("disqusShortname");
 			$url = $this->yellow->page->get("pageRead");
@@ -34,17 +34,6 @@ class YellowDisqus
 			$output .= "})();\n";
 			$output .= "</script>\n";
 			$output .= "<noscript>Please enable JavaScript to view the <a href=\"http://disqus.com/?ref_noscript\">comments powered by Disqus.</a></noscript>\n";
-		}
-		return $output;
-	}
-	
-	// Handle page extra HTML data
-	function onExtra($name)
-	{
-		$output = null;
-		if($name=="disqus" || $name=="comments")
-		{
-			$output = $this->onParseContentBlock($this->yellow->page, "disqus", "", true);
 		}
 		return $output;
 	}
