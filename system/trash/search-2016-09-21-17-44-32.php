@@ -1,11 +1,11 @@
 <?php
-// Search plugin, https://github.com/datenstrom/yellow-plugins/tree/master/search
-// Copyright (c) 2013-2017 Datenstrom, https://datenstrom.se
+// Copyright (c) 2013-2016 Datenstrom, http://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
+// Search plugin
 class YellowSearch
 {
-	const VERSION = "0.6.8";
+	const VERSION = "0.6.7";
 	var $yellow;			//access to API
 	
 	// Handle initialisation
@@ -40,7 +40,7 @@ class YellowSearch
 	{
 		if($this->yellow->page->get("template")=="search")
 		{
-			if($this->yellow->isCommandLine()) $this->yellow->page->error(500, "Static website not supported!");
+			if(PHP_SAPI=="cli") $this->yellow->page->error(500, "Static website not supported!");
 			$query = trim($_REQUEST["query"]);
 			$tokens = array_slice(array_unique(array_filter(explode(' ', $query), "strlen")), 0, 10);
 			if(!empty($tokens))

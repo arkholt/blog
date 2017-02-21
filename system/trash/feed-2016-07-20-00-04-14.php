@@ -1,11 +1,11 @@
 <?php
-// Feed plugin, https://github.com/datenstrom/yellow-plugins/tree/master/feed
-// Copyright (c) 2013-2017 Datenstrom, https://datenstrom.se
+// Copyright (c) 2013-2016 Datenstrom, http://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
+// Feed plugin
 class YellowFeed
 {
-	const VERSION = "0.6.5";
+	const VERSION = "0.6.4";
 	var $yellow;			//access to API
 	
 	// Handle initialisation
@@ -13,6 +13,7 @@ class YellowFeed
 	{
 		$this->yellow = $yellow;
 		$this->yellow->config->setDefault("feedPaginationLimit", "30");
+		$this->yellow->config->setDefault("feedPageLength", "1024");
 		$this->yellow->config->setDefault("feedLocation", "/feed/");
 		$this->yellow->config->setDefault("feedFileXml", "feed.xml");
 		$this->yellow->config->setDefault("feedFilter", "");
@@ -37,14 +38,14 @@ class YellowFeed
 				$output = "<?xml version=\"1.0\" encoding=\"utf-8\"\077>\r\n";
 				$output .= "<rss version=\"2.0\">\r\n";
 				$output .= "<channel>\r\n";
-				$output .= "<title>".$this->yellow->page->getHtml("sitename")."</title>\r\n";
-				$output .= "<link>".$this->yellow->page->serverScheme."://".$this->yellow->page->serverName.$this->yellow->page->base."/"."</link>\r\n";
-				$output .= "<description>".$this->yellow->page->getHtml("tagline")."</description>\r\n";
+				$output .= "<title>".$this->yellow->page->getHtml("titleHeader")."</title>\r\n";
+				$output .= "<description>".$this->yellow->page->getHtml("description")."</description>\r\n";
+				$output .= "<link>".$this->yellow->page->getUrl()."</link>\r\n";
 				$output .= "<language>".$this->yellow->page->getHtml("language")."</language>\r\n";
 				foreach($pages as $page)
 				{
 					$timestamp = strtotime($page->get($chronologicalOrder ? "modified" : "published"));
-					$description = $this->yellow->toolbox->createTextDescription($page->getContent(), strlenu($page->getContent()), false, "<!--more-->", " <a href=\"".$page->getLocation(true)."\">".$this->yellow->text->getHtml("blogMore")."</a>");
+					$description = $this->yellow->toolbox->createTextDescription($page->getContent(), $this->yellow->config->get("feedPageLength"), false, "<!--more-->");
 					$output .= "<item>\r\n";
 					$output .= "<title>".$page->getHtml("title")."</title>\r\n";
 					$output .= "<link>".$page->getUrl()."</link>\r\n";

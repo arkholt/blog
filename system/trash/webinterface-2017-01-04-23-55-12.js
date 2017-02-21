@@ -1,10 +1,11 @@
-// Webinterface plugin, https://github.com/datenstrom/yellow-plugins/tree/master/webinterface
-// Copyright (c) 2013-2017 Datenstrom, https://datenstrom.se
+// Copyright (c) 2013-2017 Datenstrom, http://datenstrom.se
 // This file may be used and distributed under the terms of the public license.
 
+// Yellow API
 var yellow =
 {
-	action: function(action, status, args) { yellow.webinterface.action(action, status, args); },
+	version: "0.6.18",
+	action: function(action) { yellow.webinterface.action(action, "none"); },
 	onLoad: function() { yellow.webinterface.loadInterface(); },
 	onClick: function(e) { yellow.webinterface.hidePanesOnClick(yellow.toolbox.getEventElement(e)); },
 	onKeydown: function(e) { yellow.webinterface.hidePanesOnKeydown(yellow.toolbox.getEventKeycode(e)); },
@@ -12,6 +13,7 @@ var yellow =
 	onResize: function() { yellow.webinterface.resizePane(yellow.webinterface.paneId, yellow.webinterface.paneAction, yellow.webinterface.paneStatus); }
 };
 
+// Yellow web interface
 yellow.webinterface =
 {
 	paneId: 0,			//visible pane ID
@@ -20,10 +22,9 @@ yellow.webinterface =
 	intervalId: 0,		//timer interval ID
 
 	// Handle action
-	action: function(action, status, args)
+	action: function(action, status)
 	{
-		status = status ? status : "none";
-		args = args ? args : "none";
+		if(yellow.config.debug) console.log("yellow.webinterface.action action:"+action+" status:"+status);
 		switch(action)
 		{
 			case "login":		this.showPane("yellow-pane-login", action, status); break;
@@ -36,7 +37,7 @@ yellow.webinterface =
 			case "reconfirm":	this.showPane("yellow-pane-settings", action, status); break;
 			case "change":		this.showPane("yellow-pane-settings", action, status); break;
 			case "version":		this.showPane("yellow-pane-version", action, status); break;
-			case "update":		this.sendPane("yellow-pane-update", action, status, args); break;
+			case "update":		this.sendPane("yellow-pane-version", action); break;
 			case "create":		this.showPane("yellow-pane-edit", action, status, true); break;
 			case "edit":		this.showPane("yellow-pane-edit", action, status, true); break;
 			case "delete":		this.showPane("yellow-pane-edit", action, status, true); break;
@@ -429,7 +430,7 @@ yellow.webinterface =
 	},
 	
 	// Send pane
-	sendPane: function(paneId, paneAction, paneStatus, paneArgs)
+	sendPane: function(paneId, paneAction)
 	{
 		if(yellow.config.debug) console.log("yellow.webinterface.sendPane id:"+paneId);
 		if(paneId=="yellow-pane-edit")
@@ -437,27 +438,16 @@ yellow.webinterface =
 			paneAction = this.getPaneAction(paneId, paneAction);
 			if(paneAction)
 			{
-				var args = {};
-				args.action = paneAction;
-				args.rawdatasource = yellow.page.rawDataSource;
-				args.rawdataedit = document.getElementById("yellow-pane-edit-page").value;
-				yellow.toolbox.submitForm(args, true);
+				var params = {};
+				params.action = paneAction;
+				params.rawdatasource = yellow.page.rawDataSource;
+				params.rawdataedit = document.getElementById("yellow-pane-edit-page").value;
+				yellow.toolbox.submitForm(params, true);
 			} else {
 				this.hidePane(paneId);
 			}
 		} else {
-			var args = {"action":paneAction};
-			if(paneArgs)
-			{
-				var tokens = paneArgs.split('/');
-				for(var i=0; i<tokens.length; i++)
-				{
-					var pair = tokens[i].split(/[:=]/);
-					if(!pair[0] || !pair[1]) continue;
-					args[pair[0]] = pair[1];
-				}
-			}
-			yellow.toolbox.submitForm(args);
+			yellow.toolbox.submitForm({"action":paneAction});
 		}
 	},
 	
@@ -515,6 +505,7 @@ yellow.webinterface =
 	}
 };
 
+// Yellow toolbox with helpers
 yellow.toolbox =
 {
 	// Insert element before reference element
@@ -786,14 +777,14 @@ yellow.toolbox =
 	},
 	
 	// Submit form with post method
-	submitForm: function(args, encodeNewline)
+	submitForm: function(params, encodeNewline)
 	{
 		var elementForm = document.createElement("form");
 		elementForm.setAttribute("method", "post");
-		for(var key in args)
+		for(var key in params)
 		{
-			if(!args.hasOwnProperty(key)) continue;
-			var value = encodeNewline ? this.encodeNewline(args[key]) : args[key];
+			if(!params.hasOwnProperty(key)) continue;
+			var value = encodeNewline ? this.encodeNewline(params[key]) : params[key];
 			var elementInput = document.createElement("input");
 			elementInput.setAttribute("type", "hidden");
 			elementInput.setAttribute("name", key);

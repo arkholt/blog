@@ -3,7 +3,7 @@
 Language: fr
 LanguageDescription: Français
 LanguageTranslator: Juh Nibreh
-LanguageVersion: 0.6.14
+LanguageVersion: 0.6.13
 
 BlogBy: par
 BlogFilter: Blog:
@@ -96,7 +96,6 @@ WebinterfaceVersionStatusDone: Votre site est à jour.
 WebinterfaceVersionStatusUpdates: Mises à jour disponibles, s'il vous plaît contacter le webmestre.
 WebinterfaceVersionUpdateNormal: Mises à jour disponibles, mettre à jour maintenant.
 WebinterfaceVersionUpdateForce: Forcer mise à jour
-WebinterfaceVersionUpdateModified: @software a été modifié
 WebinterfaceOkButton: Ok
 WebinterfaceCancelButton: Annuler
 WebinterfaceCreateButton: Créer
