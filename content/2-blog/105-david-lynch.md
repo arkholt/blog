@@ -26,3 +26,5 @@ For more information:
 [A selection of strips](http://www.davidlynch.de/angry.html) at The Universe of David Lynch
 
 [A further selection](http://www.lynchnet.com/angrydog/) at LynchNet
+
+[David Lynch](https://www.artsy.net/artist/david-lynch) at Artsy, which showcases his artwork outside of film
