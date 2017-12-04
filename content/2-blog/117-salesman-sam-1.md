@@ -5,7 +5,7 @@ Tag: christmas 2017
 Author: Ben Carlsen
 ---
 
-[![Salesman Sam, December 14, 1930](http://blog.arkholt.com/media/decstrips2017/4-salesman-sam_301214.tiff)](http://blog.arkholt.com/media/decstrips2017/4-salesman-sam_301214.tiff)
+[![Salesman Sam, December 14, 1930](http://blog.arkholt.com/media/decstrips2017/4-salesman-sam_301214.jpg)](http://blog.arkholt.com/media/decstrips2017/4-salesman-sam_301214.jpg)
 
 Click the image for a larger version.
 
