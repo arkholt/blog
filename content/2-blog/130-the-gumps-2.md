@@ -5,7 +5,7 @@ Tag: christmas 2017
 Author: Ben Carlsen
 ---
 
-[![The Gumps, December 25, 1927](http://blog.arkholt.com/media/decstrips2017/18-Gumps_271225.png](http://blog.arkholt.com/media/decstrips2017/18-Gumps_271225.png)
+[![The Gumps, December 25, 1927](http://blog.arkholt.com/media/decstrips2017/18-Gumps_271225.png)](http://blog.arkholt.com/media/decstrips2017/18-Gumps_271225.png)
 
 Click the image for a larger version.
 
