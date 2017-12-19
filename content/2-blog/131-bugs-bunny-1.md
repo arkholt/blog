@@ -5,7 +5,7 @@ Tag: christmas 2017
 Author: Ben Carlsen
 ---
 
-[![Bugs Bunny, December 10, 1944](http://blog.arkholt.com/media/decstrips2017/19-Bugs Bunny-12-10-44.jpg)](http://blog.arkholt.com/media/decstrips2017/19-Bugs Bunny-12-10-44.jpg)
+[![Bugs Bunny, December 10, 1944](http://blog.arkholt.com/media/decstrips2017/19-Bugs-Bunny-12-10-44.jpg)](http://blog.arkholt.com/media/decstrips2017/19-Bugs-Bunny-12-10-44.jpg)
 
 Click the image for a larger version.
 
