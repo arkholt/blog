@@ -1,5 +1,5 @@
 ---
-Title:For Better or For Worse, December 21, 1980
+Title: For Better or For Worse, December 21, 1980
 Published: 2018-12-01
 Tag: christmas 2018
 Author: Ben Carlsen
