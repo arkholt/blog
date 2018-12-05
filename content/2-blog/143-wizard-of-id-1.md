@@ -5,7 +5,7 @@ Tag: christmas 2018
 Author: Ben Carlsen
 ---
 
-[![The Wizard of Id, December 26, 1965](http://blog.arkholt.com/media/decstrips/05-wiz122665.gif)](http://blog.arkholt.com/media/decstrips/05-wiz122665.gif)
+[![The Wizard of Id, December 26, 1965](http://blog.arkholt.com/media/decstrips2018/05-wiz122665.gif)](http://blog.arkholt.com/media/decstrips2018/05-wiz122665.gif)
 
 Click the image to see a larger version.
 
