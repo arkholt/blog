@@ -5,7 +5,7 @@ Tag: christmas 2018
 Author: Ben Carlsen
 ---
 
-[![U.S. Acres, December 24, 1986](http://blog.arkholt.com/media/decstrips2018/11-gausa861224.jpg)](http://blog.arkholt.com/media/decstrips2018/11-gausa861224.jpg)
+[![U.S. Acres, December 24, 1986](http://blog.arkholt.com/media/decstrips2018/11-gausa861224.gif)](http://blog.arkholt.com/media/decstrips2018/11-gausa861224.gif)
 
 Click the image for a larger version.
 
