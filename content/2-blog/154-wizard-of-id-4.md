@@ -1,11 +1,11 @@
 ---
-Title: The Wizard of Id, December 20, 1967
+Title: The Wizard of Id, December 20, 1964
 Published: 2018-12-16
 Tag: christmas 2018
 Author: Ben Carlsen
 ---
 
-[![The Wizard of Id, December 20, 1964](http://blog.arkholt.com/media/decstrips2018/07-wiz122064.gif)](http://blog.arkholt.com/media/decstrips2018/07-wiz122064.gif)
+[![The Wizard of Id, December 20, 1964](http://blog.arkholt.com/media/decstrips2018/16-wiz122064.gif)](http://blog.arkholt.com/media/decstrips2018/16-wiz122064.gif)
 
 Click the image for a larger version.
 
