@@ -5,7 +5,7 @@ Tag: christmas 2018
 Author: Ben Carlsen
 ---
 
-[![For Better Or For Worse, December 26, 1979](http://blog.arkholt.com/media/decstrips2018/23-fb791226.gif)](http://blog.arkholt.com/media/decstrips2018/23-fb791226.gif)
+[![For Better Or For Worse, December 26, 1979](http://blog.arkholt.com/media/decstrips2018/24-fb791226.gif)](http://blog.arkholt.com/media/decstrips2018/24-fb791226.gif)
 
 Click the image for a larger version.
 
