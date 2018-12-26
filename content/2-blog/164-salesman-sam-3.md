@@ -5,7 +5,7 @@ Tag: christmas 2018
 Author: Ben Carlsen
 ---
 
-[![Salesman Sam, December 28, 1930](http://blog.arkholt.com/media/decstrips2018/26-Sam_301228.tiff)](http://blog.arkholt.com/media/decstrips2018/26-Sam_301228.tiff)
+[![Salesman Sam, December 28, 1930](http://blog.arkholt.com/media/decstrips2018/26-Sam_301228.jpg)](http://blog.arkholt.com/media/decstrips2018/26-Sam_301228.jpg)
 
 Click the image for a larger version.
 
