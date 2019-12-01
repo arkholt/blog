@@ -1,6 +1,6 @@
 ---
 Title: Smitty, December 23, 1935
-Published: 2018-12-01
+Published: 2019-12-01
 Tag: christmas 2019
 Author: Ben Carlsen
 ---
