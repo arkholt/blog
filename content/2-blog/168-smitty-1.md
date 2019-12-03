@@ -5,6 +5,8 @@ Tag: christmas 2019
 Author: Ben Carlsen
 ---
 
+Click the image for a larger version.
+
 [![Smitty, December 23, 1935](http://blog.arkholt.com/media/decstrips2019/01-Smitty-Mon__Dec_23__1935_.jpg)](http://blog.arkholt.com/media/decstrips2019/01-Smitty-Mon__Dec_23__1935_.jpg)
 
 Is it that time of year again? Yes! It's time for classic Christmas comic strips! It's a Christmas tradition that shows no signs of ending soon (despite the lack of other posts on this blog).
