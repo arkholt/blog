@@ -1,3 +1,4 @@
+---
 Title: Mickey Finn, December 22, 1936
 Published: 2019-12-02
 Tag: christmas 2019
