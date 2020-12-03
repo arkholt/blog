@@ -5,7 +5,7 @@ Tag: christmas 2020
 Author: Ben Carlsen
 ---
 
-[![Herman, December 30, 1952](http://blog.arkholt.com/decstrips2020/02-Herman-Tue__Dec_30__1952.jpg)](http://blog.arkholt.com/decstrips2020/02-Herman-Tue__Dec_30__1952.jpg)
+[![Herman, December 30, 1952](http://blog.arkholt.com/media/decstrips2020/02-Herman-Tue__Dec_30__1952.jpg)](http://blog.arkholt.com/media/decstrips2020/02-Herman-Tue__Dec_30__1952.jpg)
 
 Click the image for a larger version.
 
