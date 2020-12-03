@@ -3,5 +3,5 @@
   "localPath" : "content\/2-blog",
   "remotePath" : "\/home\/arkholt\/apps\/blog\/content\/2-blog",
   "server" : "Opalstack",
-  "usesPublishing" : false
+  "usesPublishing" : true
 }
