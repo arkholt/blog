@@ -5,7 +5,7 @@ Tag: christmas 2020
 Author: Ben Carlsen
 ---
 
-[![Krazy Kat, December 25, 1925](media/decstrips2020/07-krazy-kat_Fri__Dec_25__1925_.jpg)](media/decstrips2020/07-krazy-kat_Fri__Dec_25__1925_.jpg)
+[![Krazy Kat, December 25, 1925](http://blog.arkholt.com/media/decstrips2020/07-krazy-kat_Fri__Dec_25__1925_.jpg)](http://blog.arkholt.com/media/decstrips2020/07-krazy-kat_Fri__Dec_25__1925_.jpg)
 
 Click the image to see a larger version.
 
