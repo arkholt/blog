@@ -5,7 +5,7 @@ Tag: christmas 2020
 Author: Ben Carlsen
 ---
 
-[![Somebody's Stenog, December 21, 1926](blog.arkholt.com/media/decstrips2020/06-somebodys-stenog_Tue__Dec_21__1926_.jpg)](blog.arkholt.com/media/decstrips2020/06-somebodys-stenog_Tue__Dec_21__1926_.jpg)
+[![Somebody's Stenog, December 21, 1926](http://blog.arkholt.com/media/decstrips2020/06-somebodys-stenog_Tue__Dec_21__1926_.jpg)](http://blog.arkholt.com/media/decstrips2020/06-somebodys-stenog_Tue__Dec_21__1926_.jpg)
 
 Click the image to see a larger version.
 
