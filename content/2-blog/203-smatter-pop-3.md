@@ -5,7 +5,7 @@ Tag: christmas 2020
 Author: Ben Carlsen
 ---
 
-[![S'Matter Pop?, December 22, 1927](http://blog.arkholt.com/12-smatter-pop_Thu__Dec_22__1927_.jpg)](http://blog.arkholt.com/12-smatter-pop_Thu__Dec_22__1927_.jpg)
+[![S'Matter Pop?, December 22, 1927](http://blog.arkholt.com/media/decstrips2020/12-smatter-pop_Thu__Dec_22__1927_.jpg)](http://blog.arkholt.com/media/decstrips2020/12-smatter-pop_Thu__Dec_22__1927_.jpg)
 
 Click the image to see a larger version.
 
